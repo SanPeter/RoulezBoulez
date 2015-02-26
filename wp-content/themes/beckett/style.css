@@ -1838,7 +1838,7 @@ header.main .meta, header.main .meta p {
 .home section header{
 	text-align: center;
 	margin-bottom: 80px;
-	background: #f7f7f7;
+	background: #d7d7d7;
 	padding: 60px 0 70px;	
 }
 
@@ -2492,7 +2492,7 @@ p.read-more {
 	height: auto;
 	bottom: 0;
 	left: 0;
-	background: #eeeeee;	
+	background: #313138;	
 }
 
 #footer * {
