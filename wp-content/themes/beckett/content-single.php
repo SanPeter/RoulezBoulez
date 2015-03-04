@@ -8,16 +8,18 @@
 
 
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
-		
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="meta clearfix">
 
-				<span class="posted"><?php _e('Posted ', 'beckett'); ?></span>					
-				<span class="author"><?php _e('by', 'beckett'); ?> <?php the_author_posts_link(); ?></span>
+<?php /* TODO: Translate the Post text
+
+				<span class="posted"><?php _e('Posted ', 'beckett'); ?></span>
 				<span class="date"><?php _e('on', 'beckett'); ?> <?php the_time( 'M j, Y' ); ?></span>
 				<span class="category"><?php _e('in', 'beckett'); ?> <?php the_category(', '); ?></span>		
-				<span class="commentCount">| <a href="<?php comments_link(); ?>"><?php comments_number(__('No Comments', 'beckett'), __('One Comment', 'beckett'), __('% Comments', 'beckett')); ?></a></span>
+*/?>
+				<span class="posted">Publiée</span>
+				<span class="date">le <?php the_time( 'j M Y' ); ?></span>
+				<span class="category">dans <?php the_category(', '); ?></span>		
 
 			</div>
 		<?php endif; ?>		
