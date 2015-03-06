@@ -1,0 +1,111 @@
+/*
+TABLE OF CONTENTS
+01 - Buttons
+02 - Columns
+03 - Flexslider
+04 - Tabs
+05 - Toggles
+06 - TinyMCE Shortcode Button
+*/
+.tt_sc { margin-bottom: 1em; }
+li, a, a:hover, a:active, a:focus { outline: 0 !important; }
+/* 01 - Buttons */
+.tt_sc .button, a.tt_sc .button, #footer .tt_sc a .button { display: inline-block; text-decoration: none; position: relative; cursor: pointer; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; margin: 0 3px 0 0; line-height: normal !important; -webkit-appearance: none; font-size: .9em; font-weight: bold; transition-property: all; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.tt_sc .button:hover, a.tt_sc .button:hover, #footer a.tt_sc .button:hover { background: #fafafa; }
+/* 02 - Columns */
+.one_half{ width:48%; }
+.tt_sc .one_third{ width:31%; }
+.tt_sc .one_fourth{ width:22%; }
+.tt_sc .two_third{ width:65.33%; }
+.tt_sc .one_half,.tt_sc .one_third,.tt_sc .two_third,.tt_sc .one_fourth{ position:relative; margin-right:3%; float:left; margin-bottom: 40px;  }
+.tt_sc .last{ margin-right:0 !important; clear:right; }
+.tt_sc .clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
+@media only screen and (max-width: 700px) {
+ .tt_sc .one_half, .tt_sc .one_third, .tt_sc .two_third, .tt_sc .one_fourth {     width: 100%; }
+ .tt_sc .one_half, .tt_sc .one_third, .tt_sc .two_third {     position: relative;     margin-right: 0%;     float: none; }
+ .tt_sc .last { margin-right: 0 !important;     clear: right; }
+ .clearboth { clear: both;     display: block;     font-size: 0;     height: 0;     line-height: 0;     width: 100%; }
+}
+/* 03 - Flexslider */
+#content .tt_sc .flexslider { margin: 0 0 30px 0 !important; }
+.tt_sc .flexslider p { margin: 0 !important; }
+.tt_sc .slideshow li, #content .tt_sc .flexslider li, #content .tt_sc .flexslider ol { list-style: none !important; list-style-type: none !important; }
+#content .tt_sc .flexslider ol { padding-bottom: 5px !important; margin-bottom: 0 !important; }
+#content .tt_sc .flexslider .slides { margin: 0; }
+.tt_sc .flexslider {  min-height: 100px; border: 0 !important; margin: 0 0 0 0!important; padding: 0 0 1px 0 !important; background: transparent !important; border: none; position: relative; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; -o-border-radius: 0!important; border-radius: 0!important; box-shadow: none !important; -webkit-box-shadow: none!important; -moz-box-shadow: none!important; -o-box-shadow: none!important; zoom: 1;}
+.tt_sc .flexslider .slides li{	margin-bottom: 0 !important; }
+.tt_sc .flexslider .slides li p{ margin: 0 !important; }
+.tt_sc .flexslider .slides > li {position: relative;}
+.tt_sc .flex-direction-nav li a.flex-next::before { line-height: 0.8; }
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.tt_sc .flex-container {zoom: 1; position: relative;}
+.tt_sc .flexslider .slides img { height: auto; max-width: 100%; width: auto !important; margin: 0 auto;}
+.tt_sc .flex-direction-nav, .flex-control-nav, .flex-caption { margin-bottom:0 !important;}
+.tt_sc .flexslider .slides > li:first-child {display: block; -webkit-backface-visibility: visible;}
+#content .tt_sc ol li, .tt_sc .flexslider .slides ul li { margin: 0px 10px 10px 0 !important; clear: both;  }
+/* Caption style */
+/* IE rgba() hack */
+.tt_sc .flex-caption {width: auto; position: absolute; color: #fff; }
+.tt_sc .flex-caption p {font-size: .9em !important; margin-bottom: 0;}
+/* Direction Nav */
+.tt_sc .flex-direction-nav { position: absolute; width: 100%; margin: 0 0 15px !important; right: 0; bottom: 50%; display: block; }
+.tt_sc .flex-direction-nav li a { z-index: 100; width: 31px!important; height: 31px; display: block; cursor: pointer; text-indent: -9999px !important; border-radius: 15px; margin-top: 0; background-size: 15px 15px !important; text-align: left !important;}
+.tt_sc .flex-direction-nav li a.flex-next {right: 30px !important; background: rgba(0,0,0,0.2) url(../images/flexslider/direction_next.png) no-repeat center center;}
+.tt_sc .flex-direction-nav li a.flex-next:hover {}
+.tt_sc .flex-direction-nav li a.flex-prev {left: 30px !important; background: rgba(0,0,0,0.2) url(../images/flexslider/direction_prev.png) no-repeat center center;}
+.tt_sc .flex-direction-nav li a.flex-prev:hover {  }
+.tt_sc .flex-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+.tt_sc .flex-direction-nav .flex-disabled {display: none;}
+.flex-direction-nav li a {text-align: left !important;}
+/* Control Nav */
+.tt_sc .flex-control-nav { position: absolute; margin: 0!important; bottom: 0px !important; left: 0 !important; right: 0 !important; width: auto !important; z-index: 100;}
+.tt_sc .flex-control-nav li {width: 10px !important; height: 10px !important; margin: 0 5px 0 !important; display: inline-block !important; z-index: 100;}
+.tt_sc .flex-control-nav li:first-child {margin-left: 0 !important;}
+.tt_sc .flex-control-paging li a {width: 100% !important; height: 100% !important; display: block !important; background: none !important; cursor: pointer; text-indent: -9999px; box-shadow: none !important; border: 3px solid rgba(255,255,255,.3);}
+.tt_sc .flex-control-nav li a:hover {border: 2px solid rgba(0,0,0,0.2); !important;}
+.tt_sc .flex-control-nav li a.flex-active, .tt_sc .flex-control-nav li a.active {background: rgba(0,0,0,0.2) !important; cursor: default !important; border: 3px solid rgba(255,255,255,0); }
+.tt_sc .flex-direction-nav {}
+.tt_sc .flex-control-nav { margin: 30px 0 0 !important; position: relative !important; bottom: 0 !important; right: 0 !important; width: auto !important; }
+.tt_sc .flex-direction-nav li a.flex-next { background-position: 9px center !important; margin-top: -15px !important;}
+.tt_sc .flex-direction-nav li a.flex-prev { background-position: 7px center !important; margin-top: -15px !important;}
+.tt_sc .flex-control-nav li a { border: 2px solid rgba(0,0,0,.3); background: none !important; box-shadow: none !important; border-radius: 20px;}
+.tt_sc .flex-control-nav li a:hover { background: none !important; border: 3px solid rgba(0,0,0,.5);}
+.tt_sc .flex-control-nav li a.flex-active, .tt_sc .flex-control-nav li a.active { background: rgba(0,0,0,0.3) !important; border: 2px solid rgba(0,0,0,0);}
+/* 04 - Tabs */
+.tt_sc .nav-tabs { margin-bottom: 0 !important; }
+.tt_sc .nav { padding-left: 0; list-style: none; }
+.tt_sc .nav-tabs li { margin-bottom: -1px !important;  }
+.tt_sc .nav-tabs>li { float: left; margin-bottom: -1px; }
+.tt_sc .nav-tabs>li.active>a, .tt_sc .nav-tabs>li.active>a:hover, .tt_sc .nav-tabs>li.active>a:focus { color: #555; background-color: #fff; border: 1px solid #ddd; border-bottom: 1px solid #fff; border-bottom-color: transparent; cursor: default; }
+.tt_sc .nav-tabs>li>a { margin-right: 2px; line-height: 1.42857143; border: 1px solid transparent; border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; border: 1px solid #ddd; background-color: #f8f8f8; color: #555; -webkit-transition: background-color .35s ease; -moz-transition: background-color .35s ease; -o-transition: background-color .35s ease; transition: background-color .35s ease; }
+.tt_sc .nav-tabs>li>a:hover {
+background-color: #f3f3f3; }
+.tt_sc ul.nav-pills { margin-left: 0 !important; margin-bottom: 10px !important; }
+.tt_sc .nav-pills li { margin-right: 10px; }
+.tt_sc .nav-pills>li>a { border: 1px solid; border-radius: 10px; -moz-border-radius: 10px; }
+.tt_sc .nav-pills>li.active>a { border: 1px solid; border-radius: 10px; -moz-border-radius: 10px; background: #f8f8f8; }
+.tt_sc .nav>li>a { position: relative; display: block; padding: 10px 15px; }
+.tt_sc .nav>li { position: relative; display: inline-block; }
+.tt_sc .nav-tabs:before, .tt_sc .nav-pills:before, .tt_sc .nav-tabs:after, .tt_sc .nav-pills:after { display: table; line-height: 0; content: ""; }
+.tt_sc .nav-tabs:after, .nav-pills:after { clear: both; }
+.tt_sc .tab-content { overflow: auto; border: 1px solid #ddd; padding: 20px; margin-bottom: 30px; }
+.tt_sc .tab-content.unframed { border-right: 0; border-bottom: 0; border-left: 0; }
+.tt_sc .tab-content.unframed.pills { border-top: 0; }
+.tt_sc .tab-content>.tab-pane, .tt_sc .pill-content>.pill-pane { display: none; }
+.tt_sc .tab-content>.active, .tt_sc .pill-content>.active { display: block; }
+/* 05 - Toggles */
+.tt_sc .panel-default, .tt_sc .accordion-group { border-color: #ddd; }
+.tt_sc .panel-group .panel, .tt_sc .accordion-group .accordion { margin-bottom: 20px; background-color: #fff; }
+.tt_sc .panel-default>.panel-heading, .tt_sc .accordion-group .accordion-heading { color: #333; background-color: #f8f8f8; border-color: #ddd; -webkit-transition: background-color .35s ease; -moz-transition: background-color .35s ease; -o-transition: background-color .35s ease; transition: background-color .35s ease; }
+.tt_sc .panel-heading, .tt_sc .accordion-group .accordion-heading { border: 1px solid #ddd; background-color: #f8f8f8; }
+.tt_sc .accordion-group .accordion-heading { border-top: 0; }
+.tt_sc .panel-heading:hover, .tt_sc .accordion-heading:hover { background-color: #f3f3f3; }
+.tt_sc .panel-heading h4, .tt_sc .accordion-heading h4 { font-size: 1.2em; margin-bottom: 0; }
+.tt_sc .panel-heading h4 a, .tt_sc .accordion-heading h4 a { color: inherit; display: block; padding: 10px 15px 10px 20px; }
+.tt_sc .panel-heading h4 a:hover, .tt_sc .accordion-heading h4 a:hover { color: #333 !important; }
+
+.tt_sc .panel-body, .tt_sc .accordion-inner { padding: 15px; border: 1px solid #ddd; border-top: none; }
+.tt_sc .collapse { position: relative; height: 0; overflow: hidden; -webkit-transition: height .35s ease; -moz-transition: height .35s ease; -o-transition: height .35s ease; transition: height .35s ease; }
+.tt_sc .collapse.in { height: auto; }
+/* The following classes are in use in the HTML and can be used to further style the accordion elements */
+.tt_sc .accordion { border-top: thin solid #ddd; }
