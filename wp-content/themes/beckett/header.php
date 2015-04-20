@@ -61,7 +61,7 @@
 
 					</div>
 					<div id="menu-bg"></div>
-					<!--<div class="menu-toggle the-menu-toggle" id="menu-toggle"><span></span></div>-->
+					<div class="menu-toggle the-menu-toggle" id="menu-toggle"><span></span></div>
 				</div>			
 			
 	</div>
