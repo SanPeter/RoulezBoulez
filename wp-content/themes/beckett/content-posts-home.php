@@ -32,5 +32,22 @@ $posts_count = get_theme_mod( 'beckett_recent_posts_count', 3 );
 	<?php endwhile; ?>
 		</div>
 	</div>
+	
+	<style type="text/css">
+		.center {
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 100%;
+		    text-align: center;
+		}
+	</style>
+
+	<div class="center">
+		<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'GAleries' ) ) ); ?>">Toutes les galeries</a>			
+	</div>
+		
+		
+	
+	
 </section><!-- #blog -->
 <?php } ?>

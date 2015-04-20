@@ -12,12 +12,16 @@
 		
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="meta clearfix">
-
+<?php /* TODO: Translate the Post text
 				<span class="posted"><?php _e('Posted ', 'beckett'); ?></span>					
 				<span class="author"><?php _e('by', 'beckett'); ?> <?php the_author_posts_link(); ?></span>
 				<span class="date"><?php _e('on', 'beckett'); ?> <?php the_time( 'M j, Y' ); ?></span>
 				<span class="category"><?php _e('in', 'beckett'); ?> <?php the_category(', '); ?></span>		
 				<span class="commentCount">| <a href="<?php comments_link(); ?>"><?php comments_number(__('No Comments', 'beckett'), __('One Comment', 'beckett'), __('% Comments', 'beckett')); ?></a></span>
+*/?>
+				<span class="posted">Publié</span>					
+				<span class="date">le <?php the_time( 'M j, Y' ); ?></span>
+				<span class="category">dans <?php the_category(', '); ?></span>		
 
 			</div>
 		<?php endif; ?>
@@ -31,7 +35,7 @@
 		if ( is_search() || $show_excerpt ) : // Display Excerpts on Option or Search ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-		<?php beckett_more_link(); ?>		
+		<?/*php beckett_more_link(); */?>		
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
